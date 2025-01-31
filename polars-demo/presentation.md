@@ -1,6 +1,6 @@
 ---
 title: Data Science in Rust! 🦀
-sub_title: An outlook of data transformation using Polars
+sub_title: An Outlook of Data Transformation Using Polars
 author: Luciano Scarpulla
 ---
 
@@ -20,7 +20,7 @@ Intro
 - Currently working for a consultancy company in aviation
 <!--new_line-->
 <!--pause-->
-- Actively working in open source and exploring Rust to enhance efficiency.
+- Actively working in open source and exploring Rust to enhance efficiency
 <!-- end_slide -->
 
 
@@ -51,7 +51,7 @@ The state of Data science in Rust
 
 
 
-Some exiting features about Polars
+Some exciting features about Polars
 ---
 Polars is one of the fastest data science tools that is built on top of Apache Arrow and written in Rust. It has a very similar API to Pandas, but it's much faster and more memory efficient.
 <!-- incremental_lists: true -->
@@ -59,7 +59,7 @@ Polars is one of the fastest data science tools that is built on top of Apache A
 * Lazy API
 * Multi-threaded out of the box
 * _Cheap_ Copy-on-Write
-* Query plan optimazation
+* Query plan optimization
     * Predicate pushdown
     * Projection pushdown
     * Aggregate pushdown
@@ -98,7 +98,6 @@ Columnar storage is efficient because:
 * Query optimization - Only reading needed columns reduces I/O
 * SIMD operations - Vector operations can process entire columns at once
 * Memory efficiency - No need to read unused columns
-more text
 
 <!--end_slide-->
 
@@ -180,7 +179,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 Eager API
 --
-Lets' find out how many building _records_ were created over the years!
+Let's find out how many building _records_ were created over the years!
 <!--end_slide-->
 
 
@@ -310,6 +309,6 @@ Tasks
 * Counts by Category
 * Counts per Gross Floor Area (Binned)
 * Counts per Total Height (Binned)
-* Tallest building within 10 Km from Soho House
+* Tallest building within 10 km from Soho House
 
 <!--end_slide-->
