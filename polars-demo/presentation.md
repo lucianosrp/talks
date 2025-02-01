@@ -304,6 +304,38 @@ This builds an optimized plan before executing, rather than processing step-by-s
 <!--end_slide-->
 
 
+Centroid
+--
+![](./static/centroid.png)
+
+<!--end_slide-->
+
+We can add native Rust function to our Polars code!
+--
+
+```rust
+use geo::{Centroid, Polygon};
+
+fn calculate_centroid(coords: Vec<Vec<f64>>) -> Option<(f64, f64)> {
+    let polygon = Polygon::new(
+        geo::LineString::from(
+            coords
+                .into_iter()
+                .map(|coord| (coord[0], coord[1]))
+                .collect::<Vec<_>>(),
+        ),
+        vec![],
+    );
+
+    polygon
+        .centroid()
+        .map(|centroid| (centroid.x(), centroid.y()))
+}
+```
+
+<!--end_slide-->
+
+
 Tasks
 --
 * Counts by Category
