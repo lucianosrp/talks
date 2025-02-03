@@ -53,7 +53,7 @@ The state of Data science in Rust
 
 Some exciting features about Polars
 ---
-Polars is one of the fastest data science tools that is built on top of Apache Arrow and written in Rust. It has a very similar API to Pandas, but it's much faster and more memory efficient.
+Polars is one of the fastest data science tools that is built on top of Apache Arrow and written in Rust. It more memory efficient than Pandas.
 <!-- incremental_lists: true -->
 * Native columnar data storage
 * Lazy API
@@ -147,7 +147,7 @@ Show time!: Buildings in Hong Kong
 ```
 
 <!--pause-->
-This file has 400K properties.
+This file has 400K features.
 
 <!--end_slide-->
 
@@ -336,11 +336,66 @@ fn calculate_centroid(coords: Vec<Vec<f64>>) -> Option<(f64, f64)> {
 <!--end_slide-->
 
 
-Tasks
---
-* Counts by Category
-* Counts per Gross Floor Area (Binned)
-* Counts per Total Height (Binned)
-* Tallest building within 10 km from Soho House
+Why Polars in Rust for Production?
+---
+<!-- incremental_lists: true -->
+* **Performance & Resources**
+    * Blazing fast query execution
+    * Memory efficient with zero-copy operations
+    * Native multi-threading support
+    * Perfect for resource-constrained environments
+
+* **Production Ready**
+    * Strong type system prevents runtime errors
+    * Excellent error handling with Result type
+    * Cross-platform compatibility
+
+* **Backend Integration**
+
+
+```rust
+// Example with Actix-web
+use actix_web::{get, web, App, HttpServer, Result};
+use polars::prelude::*;
+
+#[get("/buildings/stats")]
+async fn building_stats() -> Result<web::Json<Value>> {
+    let lf = LazyFrame::scan_parquet(
+        "data.parquet",
+        ScanArgsParquet::default()
+    )?
+    .group_by(["category"])
+    .agg([col("height").mean()])
+    .collect()?;
+
+    Ok(web::Json(lf.to_json()?))
+}
+```
+
+<!--end_slide-->
+
+
+Why Polars in Rust for Production?
+---
+<!-- incremental_lists: true -->
+* **Versatile Data Pipeline Building**
+    * Read/Write multiple formats (Parquet, CSV, JSON)
+    * Easy integration with Arrow ecosystem
+    * Stream processing capabilities
+    * Excellent for ETL workflows
+
+* **Developer Experience**
+    * Familiar DataFrame API
+    * Great documentation and growing community
+    * IDE support with type hints
+    * Easy to test and benchmark
+
+* **Real-world Use Cases**
+    * Data APIs and Microservices
+    * Real-time analytics
+    * ETL Pipelines
+    * Machine Learning Feature Engineering
+    * IoT Data Processing
+
 
 <!--end_slide-->

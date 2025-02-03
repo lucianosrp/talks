@@ -89,10 +89,6 @@ fn prep_data() -> Result<LazyFrame, Box<dyn std::error::Error>> {
     load_data(&path)?;
     let mut lf: LazyFrame = LazyFrame::scan_parquet(path, ScanArgsParquet::default())?;
     let soho_house = (114.1441448, 22.2878391);
-    println!(
-        "{:?}",
-        lf.collect_schema()?.iter_names().collect::<Vec<_>>()
-    );
     let coords = get_xy_coords();
 
     lf = lf.with_column(coords).with_column(
@@ -137,6 +133,7 @@ fn make_buckets(col_name: &str, bin_width: f64) -> Expr {
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let lf = prep_data()?
+        .filter(col("distance_km").lt(lit(10)))
         .group_by([make_buckets("GROSSFLOORAREA", 1000.0)])
         .agg([col("OBJECTID").count().alias("count")])
         .sort(
