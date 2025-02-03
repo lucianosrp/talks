@@ -4,7 +4,6 @@ sub_title: An Outlook of Data Transformation Using Polars
 author: Luciano Scarpulla
 ---
 
-
 Intro
 ---
 - Hi there! I'm Luciano (_lu-cha-no_)
@@ -23,8 +22,11 @@ Intro
 - Actively working in open source and exploring Rust to enhance efficiency
 <!-- end_slide -->
 
+Code for this presenetation is available on GitHub
+---
+![](static/qr.png)
 
-
+<!-- end_slide -->
 The state of Data science in Rust
 ---
 <!--pause-->
@@ -53,7 +55,7 @@ The state of Data science in Rust
 
 Some exciting features about Polars
 ---
-Polars is one of the fastest data science tools that is built on top of Apache Arrow and written in Rust. It more memory efficient than Pandas.
+Polars is one of the fastest data science tools that is written in Rust with its own compute and buffer implementations, while maintaining compatibility with Apache Arrow. It is more memory efficient than Pandas.
 <!-- incremental_lists: true -->
 * Native columnar data storage
 * Lazy API
@@ -397,5 +399,22 @@ Why Polars in Rust for Production?
     * Machine Learning Feature Engineering
     * IoT Data Processing
 
+
+<!--end_slide-->
+Summary 🚀
+---
+<!-- incremental_lists: true -->
+* We explored Polars - a powerful DataFrame library for Rust
+* Learned about key features:
+    * Column-oriented storage
+    * Lazy evaluation
+    * Native multi-threading
+    * Production-ready capabilities
+* Demonstrated real-world examples
+    * Data loading and transformation
+    * Geographic calculations
+    * API integration
+
+* The Rust data science ecosystem is growing!
 
 <!--end_slide-->
