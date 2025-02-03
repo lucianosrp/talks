@@ -104,6 +104,10 @@ Columnar storage is efficient because:
 <!--end_slide-->
 
 
+Column oriented storage
+---
+![](static/simd.png)
+<!--end_slide-->
 
 Lazy vs Eager
 ---
