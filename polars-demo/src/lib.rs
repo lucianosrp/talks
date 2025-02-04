@@ -1,6 +1,7 @@
 use polars::prelude::*;
 use reqwest::blocking::Client;
 use std::path::Path;
+use std::time::Duration;
 
 fn download_data(file_path: &Path) -> Result<(), Box<dyn std::error::Error>> {
     let url = "https://hub.arcgis.com/api/v3/datasets/2163df5803044dc3a8f6b6054092fc71_0/downloads/data?format=geojson&spatialRefId=4326&where=1%3D1";
@@ -10,6 +11,7 @@ fn download_data(file_path: &Path) -> Result<(), Box<dyn std::error::Error>> {
         .header("User-Agent", "Mozilla/5.0")
         .header("Accept-Language", "en-US,en;q=0.5")
         .header("Connection", "keep-alive")
+        .timeout(Duration::from_secs(60 * 5))
         .send()?
         .bytes()?;
     std::fs::write(file_path, res)?;
