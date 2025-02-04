@@ -64,7 +64,6 @@ Polars is one of the fastest data science tools that is written in Rust with its
 * Query plan optimization
     * Predicate pushdown
     * Projection pushdown
-    * Aggregate pushdown
 <!--end_slide-->
 
 
