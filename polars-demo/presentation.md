@@ -1,5 +1,5 @@
 ---
-title: Data Science in Rust! 🦀
+title: Rust in Data Science! 🦀
 sub_title: An Outlook of Data Transformation Using Polars
 author: Luciano Scarpulla
 ---
