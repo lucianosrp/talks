@@ -1,0 +1,31 @@
+employee_id,first_name,last_name,department,position,salary,hire_date,last_review_date,performance_score,hours_worked,projects_completed
+1,John,Smith,Engineering,Senior Developer,85000,2018-06-15,2023-03-10,4.2,1720,15
+2,Emma,Johnson,Marketing,Marketing Manager,78000,2019-02-28,2023-04-22,3.8,1650,12
+3,Michael,Williams,Finance,Financial Analyst,72000,2020-09-10,2023-02-15,4.5,1800,8
+4,Sarah,Brown,HR,HR Specialist,65000,2021-01-05,2023-01-30,4.0,1600,10
+5,David,Jones,Engineering,Junior Developer,62000,2022-03-15,2023-05-18,3.5,1550,6
+6,Jennifer,Garcia,Sales,Sales Representative,71000,2020-07-20,2023-03-05,4.3,1740,24
+7,Robert,Miller,IT,System Administrator,75000,2019-11-12,2023-04-10,3.9,1680,14
+8,Lisa,Davis,Marketing,Content Specialist,59000,2022-02-08,2023-05-20,3.6,1580,7
+9,James,Wilson,Finance,Accountant,68000,2020-05-15,2023-02-28,4.1,1700,11
+10,Mary,Taylor,Engineering,QA Engineer,70000,2019-08-22,2023-01-15,4.4,1760,18
+11,Thomas,Anderson,Sales,Sales Manager,88000,2017-10-10,2023-03-25,4.7,1820,32
+12,Patricia,Martinez,HR,HR Manager,79000,2018-12-03,2023-04-05,4.2,1690,13
+13,Christopher,Robinson,IT,IT Manager,92000,2016-05-20,2023-02-10,4.6,1780,22
+14,Elizabeth,Clark,Marketing,SEO Specialist,63000,2021-06-17,2023-05-12,3.7,1620,9
+15,Daniel,Rodriguez,Finance,Financial Controller,82000,2018-03-30,2023-01-20,4.3,1730,16
+16,Nancy,Lewis,Engineering,DevOps Engineer,78000,2019-07-14,2023-03-18,4.0,1670,14
+17,Matthew,Lee,Sales,Account Executive,69000,2020-11-05,2023-04-15,3.8,1630,20
+18,Karen,Walker,HR,Recruiter,61000,2021-09-22,2023-05-05,3.9,1590,8
+19,Joseph,Hall,IT,Network Engineer,74000,2019-04-18,2023-02-22,4.2,1710,12
+20,Susan,Allen,Marketing,Marketing Analyst,64000,2021-03-07,2023-01-25,3.7,1640,10
+21,Richard,Young,Engineering,Software Architect,95000,2017-05-12,2023-03-30,4.8,1830,25
+22,Donna,Wright,Sales,Business Development,72000,2020-02-18,2023-04-28,4.1,1710,18
+23,Kevin,Lopez,IT,Database Administrator,77000,2019-06-30,2023-02-05,4.3,1760,15
+24,Laura,Hill,Marketing,Digital Marketing,66000,2021-04-15,2023-05-22,3.9,1630,11
+25,Steven,Scott,Finance,Budget Analyst,71000,2020-08-05,2023-01-18,4.0,1680,9
+26,Michelle,Green,HR,Benefits Coordinator,63000,2021-11-10,2023-04-12,3.8,1600,7
+27,Andrew,Adams,Engineering,Frontend Developer,76000,2019-10-25,2023-03-15,4.2,1700,16
+28,Kimberly,Baker,Sales,Sales Coordinator,65000,2022-01-20,2023-05-08,3.7,1580,13
+29,Paul,Gonzalez,IT,Support Technician,61000,2022-04-05,2023-05-25,3.6,1560,8
+30,Carol,Nelson,Marketing,PR Specialist,69000,2020-12-12,2023-02-18,4.0,1650,12
