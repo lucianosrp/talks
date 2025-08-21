@@ -9,4 +9,9 @@ dependencies = [
     "pandas>=2.3.1",
     "polars>=1.32.2",
     "duckdb>=1.3.2",
+    "ipykernel>=6.30.1",
+    "pyarrow>=21.0.0",
 ]
+
+[[tool.uv.index]]
+url = "https://wingx-018953446474.d.codeartifact.eu-central-1.amazonaws.com/pypi/internal-tools/simple/"
