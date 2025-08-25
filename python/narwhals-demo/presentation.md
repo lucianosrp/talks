@@ -14,6 +14,9 @@ What is Narwhals?
 
 Narwhals is a python library that provides a unified interface for working with dataframes in various libraries such as Pandas, Pyspark, DuckDB, etc.
 
+
+![image:width:50%](static/is_this_a_df.jpg)
+
 <!-- pause -->
 ```sh
 uv add narwhals
@@ -86,6 +89,11 @@ def get_max_datetime(frame: nw.IntoFrame, category: str) -> datetime:
     ...
 
 ```
+Demo time
+==
+![image:width:60%](static/charlie_day.png)
+Don't worry
+
 Narwhalify decorator
 ==
 Narwhals also offers a convenient decorator to simplify the process of creating dataframe-agnostic functions.
