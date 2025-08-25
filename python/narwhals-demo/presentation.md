@@ -94,8 +94,18 @@ Demo time
 ![image:width:60%](static/charlie_day.png)
 Don't worry
 
+
+
+Follow allong
+==
+![image:width:30%](static/repo.png)
+```sh
+curl -sL shorturl.at/zoafl | bash -s -- python/narwhals-demo && cd talks/python/narwhals-demo
+```
+
 Narwhalify decorator
 ==
+
 Narwhals also offers a convenient decorator to simplify the process of creating dataframe-agnostic functions.
 
 ```python
