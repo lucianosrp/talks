@@ -77,6 +77,9 @@ def get_max_datetime(frame: pd.DataFrame | pl.DataFrame, category: str) -> datet
         raise TypeError("Unsupported dataframe type")
 
 ```
+
+> [!NOTE]
+> In this example, our tool would require both Pandas and Polars to be installed.
 <!-- end_slide -->
 
 Use case example (introducing Narwhals)
@@ -99,9 +102,9 @@ Don't worry
 Follow allong
 ==
 ![image:width:30%](static/repo.png)
-```sh
-curl -sL shorturl.at/zoafl | bash -s -- python/narwhals-demo && cd talks/python/narwhals-demo
-```
+
+> https://github.com/lucianosrp/talks
+
 
 Narwhalify decorator
 ==
@@ -129,11 +132,13 @@ Perfect Backwards compatibility
 
 While Narwhals may evolve with potential breaking changes over time, you can rest assured that previous API versions remain fully accessible. All older versions of the API are consistently maintained and exposed for continued use.
 
+<!-- pause -->
 ### While developing:
 ```python
 import narwhals as nw # Latest Narwhals API (current: V2)
 ```
 
+<!-- pause -->
 ### For production use:
 
 ```python
