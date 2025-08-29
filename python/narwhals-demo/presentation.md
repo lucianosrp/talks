@@ -12,23 +12,33 @@ options:
 What is Narwhals?
 ==
 
+What is Narwhals?
+==
+
 Narwhals is a python library that provides a unified interface for working with dataframes in various libraries such as Pandas, Pyspark, DuckDB, etc.
 
 
+<!-- pause -->
 ![image:width:50%](static/is_this_a_df.jpg)
 
 <!-- pause -->
 ```sh
 uv add narwhals
 ```
+Follow along
+==
+![image:width:30%](static/repo.png)
+
+> https://github.com/lucianosrp/talks
+
 
 Who is Narwhals for?
 ==
 
 Narwhals is ideal for:
-- Developers building libraries that work with dataframes
-- Teams creating applications that process tabular data
-- Anyone wanting to write dataframe-agnostic code
+- Library developers who need to support multiple dataframe libraries
+- Teams that are dealing with multiple projects that use different dataframe libraries
+- Anyone wanting to write dataframe-agnostic code!
 
 
 Why using Narwhals?
@@ -99,12 +109,6 @@ Don't worry
 
 
 
-Follow allong
-==
-![image:width:30%](static/repo.png)
-
-> https://github.com/lucianosrp/talks
-
 
 Narwhalify decorator
 ==
@@ -124,8 +128,6 @@ Becomes:
 def agnostic_group_by_sum(df):
     return df.group_by("a").agg(nw.col("b").sum())
 ```
-
-
 
 Perfect Backwards compatibility
 ==
@@ -152,3 +154,21 @@ import narwhals.stable.V2 as nw # <- Freeze API (Will not change in V3)
 import narwhals.stable.V2 as nw
 nw.col("col_a").cum_sum() # <- available in V2 but breaking in V3
 ```
+
+Contribute!
+==
+### You found a missing implementation ?
+- Please open an issue on our GitHub repository
+- Or submit a pull request
+
+### If you want to contribute to Narwhals, we welcome your help!
+
+- Probably one of the most friendly open-source projects out there!
+- Good for first-time contributors!
+- Join us and help shape the future of dataframe interoperability!
+
+Thanks for listening!
+==
+
+<!--jump_to_middle-->
+Questions?
