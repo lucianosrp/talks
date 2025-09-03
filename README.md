@@ -5,9 +5,9 @@ This repository contains materials for various tech talks I have given in Hong K
 ## Contents
 
 ### Python
-- `python/narwhals-demo` - _WIP_
+- `python/narwhals-demo` -A demo of dataframe interoperability using the Narwhals library. Presented at Python User Group Meetup in August 2025 (City University of Hong Kong).
 ### Rust
-- `rust/polars-demo` - A demonstration of using the Polars data science library in Rust
+- `rust/polars-demo` - A demonstration of using the Polars data science library in Rust. Presented at the Hong Kong Rust Meetup in December 2024 (Mantra).
 
 ## Getting Started
 
