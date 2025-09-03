@@ -12,14 +12,12 @@ options:
 What is Narwhals?
 ==
 
-What is Narwhals?
-==
-
 Narwhals is a python library that provides a unified interface for working with dataframes in various libraries such as Pandas, Pyspark, DuckDB, etc.
 
 
 <!-- pause -->
 ![image:width:50%](static/is_this_a_df.jpg)
+
 
 <!-- pause -->
 ```sh
