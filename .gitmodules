@@ -1,0 +1,3 @@
+[submodule "zellij-agent"]
+	path = zellij-agent
+	url = git@github.com:lucianosrp/zellij-agent
