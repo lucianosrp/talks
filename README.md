@@ -9,6 +9,10 @@ This repository contains materials for various tech talks I have given in Hong K
 ### Rust
 - `rust/polars-demo` - A demonstration of using the Polars data science library in Rust. Presented at the Hong Kong Rust Meetup in December 2024 (Mantra).
 
+### Zellij
+- `zellij-agent` - "Boost your productivity with Zellij." Presented at the Hong Kong Rust Meetup (ExpressVPN).
+- `zellij-agent-hkoscon` - A re-do of the Zellij talk for HKOSCON, adding `zellij web` and shareable browser-based instances. Built with Slidev.
+
 ## Getting Started
 
 You can pull the desired talk with this command

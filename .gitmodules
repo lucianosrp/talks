@@ -1,3 +1,6 @@
 [submodule "zellij-agent"]
 	path = zellij-agent
 	url = git@github.com:lucianosrp/zellij-agent
+[submodule "zellij-agent-hkoscon"]
+	path = zellij-agent-hkoscon
+	url = git@github.com:lucianosrp/zellij-agent-hkoscon
